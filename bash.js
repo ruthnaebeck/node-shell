@@ -18,3 +18,7 @@ process.stdin.on('data', function (data) {
   process.stdout.write('\nprompt > ');
 
 });
+
+var commands = require('./commands');
+var userCommand = 'pwd';
+commands[userCommand]();
