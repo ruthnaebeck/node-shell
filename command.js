@@ -1,4 +1,5 @@
 var fs = require('fs');
+var req = require('request');
 
 module.exports = {
 	pwd: function(){
@@ -99,6 +100,14 @@ module.exports = {
 		});
 	},
 
-}
+	curl: function(url){
+		req('http://www.' + url[1], (err, response, body) => {
+			if (err) throw err;
+			process.stdout.write('body: ' + body);
+			process.stdout.write('\nprompt > ');
+		});
+	},
+
+};
 
 
