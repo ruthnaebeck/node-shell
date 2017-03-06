@@ -1,0 +1,9 @@
+5
+20
+3
+A line that begins with a
+Z line that begins with z
+bee
+M line that begins with m
+dog
+A line that begins with a

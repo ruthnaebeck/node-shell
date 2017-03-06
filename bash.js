@@ -20,3 +20,8 @@ process.stdin.on('data', function (data) {
   process.stdout.write('\nprompt > ');
 
 });
+// 6
+// 5
+// 4
+// 3
+// 2
